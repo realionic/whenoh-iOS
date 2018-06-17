@@ -8,7 +8,11 @@
 
 import UIKit
 
-private let baseURL = "https://serverless.arteight.co.kr/v1"
+//private let baseURL = "https://serverless.arteight.co.kr/v1"
+
+private let baseURL = "https://fo8qoov62m.execute-api.ap-northeast-2.amazonaws.com/dev"
+
+//private let baseURL = "d9weyhy7bsddx.cloudfront.net/v1"
 
 // API Protocol
 protocol APIProtocol

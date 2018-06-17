@@ -29,6 +29,7 @@ struct NetworkService: NetworkServiceType {
                 switch response.result {
                 case .success(let value):
                     do {
+                        print(value)
                         let issueData = try value.decode([Issue].self)
                         completion(.success(issueData))
                     } catch {
@@ -52,10 +53,8 @@ struct NetworkService: NetworkServiceType {
                 case .success(let value):
                     do {
                         let IssueData = try value.decode(Issue.self)
-                        print("--------!!--------")
                         completion(.success(IssueData))
                     } catch {
-                        print("------??------")
                         completion(.error(error))
                     }
                 case .failure(let error):
